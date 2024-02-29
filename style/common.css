@@ -1,0 +1,34 @@
+@charset "utf-8";
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Noto+Sans+KR:wght@100..900&display=swap");
+body, h1, h2, p, small, address{margin:0; font-weight:normal; font-style:normal;}
+ul {list-style: none;padding:0; margin:0;}
+a {text-decoration: none; color: black;}
+body {font-family: "Noto Sans KR", sans-serif;}
+
+#header {height: 42px; background: linear-gradient(#8e0000, #700000); border-bottom: 1px solid black;}
+#header h1 { color: white; text-transform: capitalize; text-align: center; font-weight: 700;}
+#header a {position:absolute; top:4px; height:32px; display: block; background: url(../images/sprites.png) no-repeat; text-indent: -9999px;}
+#header .btn {left: 4px; width: 62px;}
+#header .toggleBtn{right:4px;  width: 32px;  background-position: right;}
+
+#toggleNav {padding: 20px; background: grey; }
+#toggleNav ul { background: white; display:flex;flex-flow: row wrap;}
+#toggleNav ul li {width: 80px; height: 28px;}
+#toggleNav ul li a {}
+
+#topNav {}
+#topNav ul {display: flex;}
+#topNav ul li {width: 25%;}
+#topNav ul li a {display:block; background:#700000; color: white; text-align:center; line-height:35px;}
+#topNav ul li a:hover {background: white; color: black;}
+
+#bottNav {}
+#bottNav ul {display: flex; border: 1px solid black;}
+#bottNav ul li {width:20%;}
+
+#bottNav ul li a {position: relative; display: block; color: black;
+                    text-align: center; line-height: 35px;}
+#bottNav ul li a::after { content: "";
+                        position: absolute; top: 10px; left: -1px;
+                        width: 1px; height: 15px;
+                        background: black;}
